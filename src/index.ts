@@ -169,7 +169,7 @@ export async function startup(
 
   // Start Electron.app
   process.electronApp = spawn(electronPath, argv, {
-    stdio: ['inherit', 'inherit', 'inherit', 'ipc'],
+    stdio: "inherit",
     ...options,
   })
 
